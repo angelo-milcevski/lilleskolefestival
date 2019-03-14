@@ -108,13 +108,13 @@ function printTest(data){
             let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
             
                 
-            let countdown = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+            let countdown = "<b>" + days + "</b>" +  "d " + "<b>" + hours + "</b>" + "h " + "<b>" + minutes + "</b>" + "m " + "<b>" + seconds + "</b>" + "s";
             
             document.getElementById("countdown").innerHTML = countdown;
 
            if(timeLeft <= 0){
               
-            document.getElementById("countdown").innerHTML ="0d " + "0h " + "0m " + "0s "
+            document.getElementById("countdown").innerHTML ="<b>0</b>d " + "<b>0</b>h " + "<b>0</b>m " + "<b>0</b>s "
                
            }
          
