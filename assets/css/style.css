@@ -1,3 +1,8 @@
+body{
+    font-family: 'Raleway', sans-serif;
+     margin: 0;
+
+}
 .fa-times, .fa-bars{
     display: none !important;
 }
@@ -14,9 +19,18 @@
     }
       .fa-bars{
           float: right;
-          margin-right: 10px;
-          padding-top: 15px;
+          margin-right: 15px;
+          padding-top: 20px;
+          position: fixed;
+          right: 0;
           display: block !important;
+          color: white;
+          font-size: 20px;
+    }
+    
+    #countdown{
+        text-align: center;
+        font-size: 25px;
     }
     
     .slider ul{
@@ -40,7 +54,7 @@
       z-index: 1;
       top: 0;
       right: 0;
-      background-color: #538399;
+      background-color: #447792;
       overflow-x: hidden;
       transition: 0.7s;
       padding-top: 20px;
@@ -56,6 +70,7 @@
         height: 20%;
         width: 100%;
     }
+    
     
   .fa-bars, .fa-times, .slider{
      display: block;
@@ -74,7 +89,48 @@
         display: block;
     }
     
-
+     #homePageHeader, .TicketBtn{
+        text-align: center;
+    }
+    
+    #tickets{
+       background-color: #74b1d0;
+       border: none;
+       border-radius: 6px;;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+        
+    }
+    
+   
+    main{
+        background-color: #f4f9fc;
+        margin: 15px;
+    }
+    
+    .workshops{
+        border: 1px solid black;
+        height: 150px;
+    }
+    
+    .workshopImage{
+        height: 150px;
+        width: 50%;
+    }
+    
+    .workshopText{
+        border: 1px solid red;
+        height: 150px;
+        width: 50%;
+    }
+    
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -107,7 +163,7 @@
       
       nav{
         height: 50px;
-        background-color: #538399;
+        background-color: #447792;
         display: block;
         width: 100%;
         position: fixed;
@@ -139,5 +195,6 @@
         display: none !important;
     }
     
+   
     
 }

@@ -43,6 +43,7 @@ request.send()
 
 function printTest(data){
     let homePageHTMLString = "";
+    let countdownDate = "";
     let ticketsHTMLString = "";
     let programHTMLString = "";
     let contactHTMLString = "";
@@ -53,8 +54,9 @@ function printTest(data){
         
         // I look at the different components, instead of the whole page 
         
+        
        // Checking the block names
-        console.log(data.story.content.body[i].component);
+        //console.log(data.story.content.body[i].component);
            
         // Getting the UL from slider
         let sliderUl = document.getElementById("sliderLinks");
@@ -85,6 +87,48 @@ function printTest(data){
         // Adding links into UL
         sliderUl.innerHTML += sliderLinks;
         navUl.innerHTML += sliderLinks;
+        
+        
+        switch (data.story.content.body[i].component) {
+                
+            case "homePage":
+                
+            let storyBlockDate = new Date(data.story.content.body[i].homePageDate).getTime();
+          
+            let sec = setInterval(function(){
+                      
+            let now = new Date().getTime();
+            
+            let timeLeft = storyBlockDate - now;
+                
+    
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+                
+            let countdown = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+            
+            document.getElementById("countdown").innerHTML = countdown;
+
+           if(timeLeft <= 0){
+              
+            document.getElementById("countdown").innerHTML ="0d " + "0h " + "0m " + "0s "
+               
+           }
+         
+    
+          })
+                let homePageHeader = "";
+                
+                 homePageHeader += '<h2>' + data.story.content.body[i].homePageTitle + '</h2>';
+                
+                document.getElementById("homePageHeader").innerHTML += homePageHeader; 
+               break;    
+     
+           
+        }
         
      /*   switch (data.story.content.body[i].component) {
             case 'tickets':
