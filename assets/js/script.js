@@ -125,6 +125,16 @@ function printTest(data){
                  homePageHeader += '<h2>' + data.story.content.body[i].homePageTitle + '</h2>';
                 
                 document.getElementById("homePageHeader").innerHTML += homePageHeader; 
+                
+                
+                let workshopTextOne =  data.story.content.body[i].homePageWorkShopOne ;
+                
+                document.getElementById("workshopTextOne").innerHTML = workshopTextOne ;
+                
+                let workshopTextTwo =  data.story.content.body[i].homePageWorkShopTwo ;
+                
+                document.getElementById("workshopTextTwo").innerHTML = workshopTextTwo ;
+
                break;    
      
            

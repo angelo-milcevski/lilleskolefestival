@@ -109,6 +109,24 @@ body{
         
     }
     
+    .readMoreBtn{
+       background-color: #447792;
+       border: none;
+       border-radius: 6px;;
+       color: white;
+       padding: 8px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 10px;
+       margin: 1px 2px;
+       cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+        float: right;
+        margin-right: 25px;
+        
+    }
+    
    
     main{
         background-color: #f4f9fc;
@@ -116,21 +134,45 @@ body{
     }
     
     .workshops{
-        border: 1px solid black;
         height: 150px;
+        background-color: white;
+        
     }
     
-    .workshopImage{
+    .workshopImage img{
         height: 150px;
         width: 50%;
+        float: left;
+        display: block;
+        
+
     }
     
     .workshopText{
-        border: 1px solid red;
         height: 150px;
         width: 50%;
+        float: right;
+        display: block;
+
+    } 
+    #workshopTextOne, #workshopTextTwo {
+        padding-left: 25px;
+
     }
     
+    .seeMore{
+        float: right;
+        width: 100%;
+        text-align: right;
+        background-color: #f4f9fc;
+    }
+    
+    .seeMore a{
+        margin-right:25px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
