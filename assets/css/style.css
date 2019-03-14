@@ -1,0 +1,143 @@
+.fa-times, .fa-bars{
+    display: none !important;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .fa-times{
+        color: white;
+        float: right;
+        margin-right: 15px;
+        font-size: 20px;
+        display: block !important;
+    }
+      .fa-bars{
+          float: right;
+          margin-right: 10px;
+          padding-top: 15px;
+          display: block !important;
+    }
+    
+    .slider ul{
+        color: white;
+        list-style: none;
+        padding-top: 20px;
+        line-height: 3;
+        margin-left: auto;
+    }
+    
+   
+    .slider a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .slider{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #538399;
+      overflow-x: hidden;
+      transition: 0.7s;
+      padding-top: 20px;
+        z-index: 9999;
+        white-space: nowrap;
+    }
+    
+    .hamburgerBar{
+        height: 50px;
+    }
+    
+    header img{
+        height: 20%;
+        width: 100%;
+    }
+    
+  .fa-bars, .fa-times, .slider{
+     display: block;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+      #navLinks{
+        display: none;
+        
+    } 
+    
+    #sliderLinks{
+        display: block;
+    }
+    
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    
+    
+    .fa-bars, .fa-times, .slider{
+     display: block;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+      body{
+          margin: 0;
+      }
+      
+      nav{
+        height: 50px;
+        background-color: #538399;
+        display: block;
+        width: 100%;
+        position: fixed;
+    }
+    
+ 
+    li{
+        list-style: none;
+    }
+    
+ 
+     #navLinks a{
+        display: block;
+        color: white;
+         float: left;
+         text-decoration: none;
+         padding: 0 10px;
+         text-align: center;
+         font-size: 18px;
+
+        
+    } 
+    
+    #navLinks a:hover{
+        text-decoration: underline;
+    }
+    
+    #sliderLinks{
+        display: none !important;
+    }
+    
+    
+}
