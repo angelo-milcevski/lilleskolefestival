@@ -21,7 +21,7 @@ body{
           float: right;
           margin-right: 15px;
           padding-top: 20px;
-          position: fixed;
+          position: absolute;
           right: 0;
           display: block !important;
           color: white;
@@ -93,6 +93,10 @@ body{
         text-align: center;
     }
     
+    #homePageHeader h2{
+        padding-top: 15px;
+    }
+    
     #tickets{
        background-color: #74b1d0;
        border: none;
@@ -123,21 +127,39 @@ body{
        cursor: pointer;
         box-shadow: 2px 2px 2px grey;
         float: right;
-        margin-right: 25px;
+        margin-right: 15px;
         
     }
     
    
     main{
-        background-color: #f4f9fc;
         margin: 15px;
     }
-    
-    .workshops{
+    .headerWrapper{
+        background-color: #f4f9fc;
+        height: 180px;
+
+    }
+    .workshops, .reviews{
         height: 150px;
         background-color: white;
         
     }
+    
+    .workshopsHeader, .reviewsHeader{
+        background-color: white;
+       
+    }
+    
+    .reviewsHeader{
+         padding-top: 20px;
+    }
+     .reviewOne, .reviewTwo{
+        float: left;
+         width: 50%;
+         height: 150px;
+    }
+    
     
     .workshopImage img{
         height: 150px;
@@ -153,6 +175,7 @@ body{
         width: 50%;
         float: right;
         display: block;
+        font-size: 15px;
 
     } 
     #workshopTextOne, #workshopTextTwo {
@@ -165,6 +188,8 @@ body{
         width: 100%;
         text-align: right;
         background-color: #f4f9fc;
+        padding-top: 10px;
+        height: 30px;
     }
     
     .seeMore a{
@@ -173,6 +198,57 @@ body{
         text-decoration: none;
         cursor: pointer;
     }
+    
+    #reviewTwo{
+        padding-left: 25px;
+    }
+    
+    footer{
+        height: 100px;
+        background-color: #447792;
+        color: white;
+    }
+    
+    footer a{
+        color: white;
+        cursor: pointer;
+    }
+    
+    .socialMedia{
+        width: 50%;
+        height: 100px;
+        float: right;
+    }
+      .footerContact{
+        width: 50%;
+        height: 100px;
+        float: left;
+    }
+    
+    
+    .footerContact a, .footerContact h3{
+        margin-left: 15px;
+        float: left;
+    }
+    .socialMedia h3, .socialMedia a{
+        float: right;
+        margin-right: 15px;
+    }
+    .socialMedia h3, .footerContact h3{
+        width: 100%;
+    }
+ 
+    .footerContact h3{
+        text-align: left;
+    }
+    .socialMedia h3{
+        text-align: right;
+    }
+    .socialMedia a, .footerContact a{
+        font-size: 20px;
+    }
+
+   
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

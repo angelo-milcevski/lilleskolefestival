@@ -88,7 +88,6 @@ function printTest(data){
         sliderUl.innerHTML += sliderLinks;
         navUl.innerHTML += sliderLinks;
         
-        
         switch (data.story.content.body[i].component) {
                 
             case "homePage":
@@ -133,11 +132,42 @@ function printTest(data){
                 
                 let workshopTextTwo =  data.story.content.body[i].homePageWorkShopTwo ;
                 
-                document.getElementById("workshopTextTwo").innerHTML = workshopTextTwo ;
+                document.getElementById("workshopTextTwo").innerHTML = workshopTextTwo ;  
+                
+                let homePageReviewOne =  data.story.content.body[i].homePageReviewOne;
+                
+                document.getElementById("reviewOne").innerHTML = "<i>" + homePageReviewOne + "</i>";
+                
+                let homePageReviewTwo =  data.story.content.body[i].homePageReviewTwo;
+                
+                document.getElementById("reviewTwo").innerHTML = "<i>" + homePageReviewTwo + "</i>";
+                
+                
 
                break;    
      
-           
+            case "contact":
+                
+            let footerEMail = data.story.content.body[i].footerEmail;
+                document.getElementById("footerEmail").href = "mailto:" + footerEMail;
+                
+            let footerPhone = data.story.content.body[i].footerPhone;
+                document.getElementById("footerPhone").href = "tel:" + footerPhone;
+                
+            let footerMap = data.story.content.body[i].footerMap;
+                document.getElementById("footerMap").href = footerMap;
+                
+            let footerFb = data.story.content.body[i].footerFacebook;
+                document.getElementById("footerFb").href = footerFb;
+                
+            let footerIg = data.story.content.body[i].footerInstagram;
+                document.getElementById("footerIg").href = footerIg;
+                
+            let footerYt = data.story.content.body[i].footerYoutube;
+                document.getElementById("footerYt").href = footerYt;
+                
+                
+                break;
         }
         
      /*   switch (data.story.content.body[i].component) {
