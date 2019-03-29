@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    
 
 </head>
 
 <body>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
        <!-- <script src="//app.storyblok.com/f/storyblok-latest.js?t=8wpboz3QWlaT4F8MLPbTwwtt" type="text/javascript"> </script> --> 
 
     <script src="assets/js/script.js"></script>
+    <script>
+    switch (window.location.pathname){
+  case '/Index.html': path = 'home';
+    break;
+  default: path = 'home';
+}
     
+    </script>
    <div class="slider">
        <i class="fas fa-times" onclick="closeSlider()"></i>
 
@@ -34,7 +44,7 @@
         <i class="fas fa-bars" onclick="sideMenu()"></i>
 
      <header>
-    <img src="assets/img/costadeaal.jpg" alt="Costa del aal" id="headerImage">
+    <img  alt="Costa del aal" id="headerImage">
     </header>  
     
     <main>
@@ -46,40 +56,54 @@
     <br>
     
     <div class="TicketBtn">
-    <button type="button" id="tickets">Get Tickets</button>
+    <button type="button" id="tickets" onclick="window.location.href='tickets.html'">Get Tickets</button>
       
     </div>
     
         </div>
     <div class="workshopsHeader"><h3>Workshops</h3></div>
 
-    <div class="workshops">
+        <div class="workshopGrid">
+    <div class="workshops" id="dancingWorkshop">
         
        <div class="workshopImage">
-        <img src="assets/img/dancing.jpg" width="100%" height="auto">
+        <img id="dancingImg" width="100%" height="auto">
         </div>
         <div class="workshopText">
-         <p id="workshopTextOne"></p>
-        <button type="button" class="readMoreBtn">Read More</button>
+         <p id="workshopTextDancing"></p>
+        <button type="button" class="readMoreBtn"  onclick="window.location.href='program.html#workshopDance' ">Read More</button>
         </div>
         
     </div>
-    <br>
+    <br id="workshopBreak">
         
-    <div class="workshops">
+    <div class="workshops" id="artWorkshop">
 
         <div class="workshopImage">
-        <img src="assets/img/art.jpg" width="100%" height="auto">
+        <img id="designImg" width="100%" height="auto">
         </div> 
         <div class="workshopText">
-        <p id="workshopTextTwo"></p>
-        <button type="button" class="readMoreBtn">Read More</button>
+        <p id="workshopTextArt"></p>
+        <button type="button" class="readMoreBtn" onclick="window.location.href='program.html#workshopDesign'">Read More</button>
+        </div>
+        
+     </div>   
+        
+    <div class="workshops" id="thirdWorkshop">
+
+        <div class="workshopImage">
+        <img id="actingImg" width="100%" height="auto">
+        </div> 
+        <div class="workshopText">
+        <p id="workshopTextThree"></p>
+        <button type="button" class="readMoreBtn" onclick="window.location.href='program.html#workshopTheatre'">Read More</button>
         </div>
         
      </div> 
+            </div>
         <br>
           <div class="seeMore">
-        <a href="#">See More <i class="fas fa-arrow-right"></i></a>
+        <a href="program.html#workshops">See More <i class="fas fa-arrow-right"></i></a>
         </div>
         <br>
         
@@ -90,17 +114,28 @@
             
         <div class="reviewOne"><p id="reviewOne"></p></div>
         <div class="reviewTwo"><p id="reviewTwo"></p></div>
+        <div class="reviewThree"><p id="reviewThree"></p></div>
+        <div class="reviewFour"><p id="reviewFour"></p></div>
+        
+        </div>
+      <div class="ytVideo">
+        
+        <iframe id="ytVideo" allowfullscreen> </iframe>
         
         </div>
         <br>
     </main>
 
+ 
     <footer>
     
         <div class="footerContact">
             <h3>Contact us</h3>
-
+            
+            <p id="footerAddress"></p>
              <a id="footerEmail"><i class="far fa-envelope"></i></a>
+             <p id="footerMail"> </p>
+             <p id="footerTel"> </p>
              <a id="footerPhone"><i class="fas fa-phone-square"></i></a>
              <a id="footerMap" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
 
@@ -110,13 +145,15 @@
         <div class="socialMedia">
             <h3>Follow us</h3>
             
-            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
-            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
             <a id="footerFb" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
+
 
         </div>
         
          
+    
         
     </footer>
     
