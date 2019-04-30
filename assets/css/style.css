@@ -1,322 +1,19 @@
-
-
-body{
+body {
     font-family: 'Raleway', sans-serif;
-     margin: 0;
+    margin: 0;
 
 }
-.fa-times, .fa-bars{
+
+.fa-times,
+.fa-bars {
     display: none !important;
 }
 
-    #tickets{
-       background-color: #74b1d0;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 15px 32px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 16px;
-       margin: 4px 2px;
-       cursor: pointer;
-        box-shadow: 2px 2px 2px grey;
-        
-    }
-    
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .fa-times{
-        color: white;
-        float: right;
-        margin-right: 15px;
-        font-size: 20px;
-        display: block !important;
-    }
-      .fa-bars{
-          float: right;
-          margin-right: 15px;
-          padding-top: 20px;
-          position: absolute;
-          right: 0;
-          display: block !important;
-          color: white;
-          font-size: 20px;
-    }
-    
-    #countdown{
-        text-align: center;
-        font-size: 25px;
-    }
-    
-    .slider ul{
-        color: white;
-        list-style: none;
-        padding-top: 20px;
-        line-height: 3;
-        margin-left: auto;
-    }
-    
-   
-    .slider a{
-        color: white;
-        text-decoration: none;
-    }
-    
-    .slider{
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #447792;
-      overflow-x: hidden;
-      transition: 0.7s;
-      padding-top: 20px;
-        z-index: 9999;
-        white-space: nowrap;
-    }
-    
-    .hamburgerBar{
-        height: 50px;
-    }
-    
-    header img{
-        height: 20%;
-        width: 100%;
-    }
-    
-    
-  .fa-bars, .fa-times, .slider{
-     display: block;
-    }
-    
-    nav{
-        display: none;
-    }
-    
-      #navLinks{
-        display: none;
-        
-    } 
-    
-    #sliderLinks{
-        display: block;
-    }
-    
-     #homePageHeader, .TicketBtn{
-        text-align: center;
-    }
-    
-    #homePageHeader h2{
-        padding-top: 15px;
-    }
-    
-    #tickets{
-       background-color: #74b1d0;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 15px 32px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 16px;
-       margin: 4px 2px;
-       cursor: pointer;
-        box-shadow: 2px 2px 2px grey;
-        
-    }
-    
-    .readMoreBtn{
-       background-color: #447792;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 8px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 10px;
-       margin: 1px 2px;
-       cursor: pointer;
-        box-shadow: 2px 2px 2px grey;
-        float: right;
-        margin-right: 15px;
-        
-    }
-    
-   
-    main{
-        margin: 15px;
-    }
-    .headerWrapper{
-        background-color: #f4f9fc;
-        height: 180px;
-
-    }
-    .workshops, .reviews{
-        height: 150px;
-        background-color: white;
-        
-    }
-    
-    .workshopsHeader, .reviewsHeader{
-        background-color: white;
-       
-    }
-    
-    .reviewsHeader{
-         padding-top: 20px;
-    }
-     .reviewOne, .reviewTwo{
-        float: left;
-         width: 50%;
-         height: 150px;
-    }
-    
-    #thirdWorkshop, .reviewThree, .reviewFour{
-        display: none;
-    }
-    
-    .workshopImage img{
-        height: 150px;
-        width: 50%;
-        float: left;
-        display: block;
-        
-
-    }
-    
-    .workshopGrid{
-        display: block;
-    }
-    
-    .workshopText{
-        height: 150px;
-        width: 50%;
-        float: right;
-        display: block;
-        font-size: 15px;
-
-    } 
-    #workshopTextDancing, #workshopTextArt {
-        padding-left: 25px;
-
-    }
-    
-    .seeMore{
-        float: right;
-        width: 100%;
-        text-align: right;
-        background-color: #f4f9fc;
-        padding-top: 10px;
-        height: 30px;
-    }
-    
-    .seeMore a{
-        margin-right:25px;
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    #reviewTwo{
-        padding-left: 25px;
-    }
-    
-    .ytVideo{
-        display: none;
-    }
-    
-    footer{
-        height: 100px;
-        background-color: #447792;
-        color: white;
-    }
-    
-    #footerAddress{
-        display: none;
-    }
-    
-    footer a{
-        color: white;
-        cursor: pointer;
-    }
-    
-    .socialMedia{
-        width: 50%;
-        height: 100px;
-        float: right;
-    }
-      .footerContact{
-        width: 50%;
-        height: 100px;
-        float: left;
-    }
-    
-    
-    .footerContact a, .footerContact h3{
-        margin-left: 15px;
-        float: left;
-    }
-    .socialMedia h3, .socialMedia a{
-        float: right;
-        margin-right: 15px;
-    }
-    .socialMedia h3, .footerContact h3{
-        width: 100%;
-    }
- 
-    .footerContact h3{
-        text-align: left;
-    }
-    .socialMedia h3{
-        text-align: right;
-    }
-    .socialMedia a, .footerContact a{
-        font-size: 20px;
-    }
-    
-    .socialMedia a{
-        
-    }
-   
-
-    #footerMail, #footerTel{
-        display: none;
-    }
-    
-    footer iframe{
-        display: none;
-    }
-    
-    /* TICKETS PAGE */
-
-    #ticketsTable{
-        width: 100%;
-    }
-    
-    #ticketsTable th{
-        text-align: left;
-    }
-    
-    #ticketsTable tr{
-        line-height: 2;
-    }
-    .buyTickets{
-        padding: 10px 0;
-        height:  60px;
-    }
-    #buyButton{
-    position: relative;
-    float: right;
+#tickets {
     background-color: #74b1d0;
     border: none;
-    border-radius: 6px;;
+    border-radius: 6px;
+    ;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -326,103 +23,437 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     box-shadow: 2px 2px 2px grey;
-    
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .fa-times {
+        color: white;
+        float: right;
+        margin-right: 15px;
+        font-size: 20px;
+        display: block !important;
     }
-    
-    iframe{
+
+    .fa-bars {
+        float: right;
+        margin-right: 15px;
+        padding-top: 20px;
+        position: absolute;
+        right: 0;
+        display: block !important;
+        color: white;
+        font-size: 20px;
+    }
+
+    #countdown {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .slider ul {
+        color: white;
+        list-style: none;
+        padding-top: 20px;
+        line-height: 3;
+        margin-left: auto;
+    }
+
+
+    .slider a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .slider {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #447792;
+        overflow-x: hidden;
+        transition: 0.7s;
+        padding-top: 20px;
+        z-index: 9999;
+        white-space: nowrap;
+    }
+
+    .hamburgerBar {
+        height: 50px;
+    }
+
+    header img {
+        height: 20%;
+        width: 100%;
+    }
+
+
+    .fa-bars,
+    .fa-times,
+    .slider {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #navLinks {
+        display: none;
+
+    }
+
+    #sliderLinks {
+        display: block;
+    }
+
+    #homePageHeader,
+    .TicketBtn {
+        text-align: center;
+    }
+
+    #homePageHeader h2 {
+        padding-top: 15px;
+    }
+
+    #tickets {
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+
+    }
+
+    .readMoreBtn {
+        background-color: #447792;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 1px 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+        float: right;
+        margin-right: 15px;
+
+    }
+
+
+    main {
+        margin: 15px;
+    }
+
+    .headerWrapper {
+        background-color: #f4f9fc;
+        height: 180px;
+
+    }
+
+    .workshops,
+    .reviews {
+        height: 150px;
+        background-color: white;
+
+    }
+
+    .workshopsHeader,
+    .reviewsHeader {
+        background-color: white;
+
+    }
+
+    .reviewsHeader {
+        padding-top: 20px;
+    }
+
+    .reviewOne,
+    .reviewTwo {
+        float: left;
+        width: 50%;
+        height: 150px;
+    }
+
+    #thirdWorkshop,
+    .reviewThree,
+    .reviewFour {
+        display: none;
+    }
+
+    .workshopImage img {
+        height: 150px;
+        width: 50%;
+        float: left;
+        display: block;
+
+
+    }
+
+    .workshopGrid {
+        display: block;
+    }
+
+    .workshopText {
+        height: 150px;
+        width: 50%;
+        float: right;
+        display: block;
+        font-size: 15px;
+
+    }
+
+    #workshopTextDancing,
+    #workshopTextArt {
+        padding-left: 25px;
+
+    }
+
+    .seeMore {
+        float: right;
+        width: 100%;
+        text-align: right;
+        background-color: #f4f9fc;
+        padding-top: 10px;
+        height: 30px;
+    }
+
+    .seeMore a {
+        margin-right: 25px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #reviewTwo {
+        padding-left: 25px;
+    }
+
+    .ytVideo {
+        display: none;
+    }
+
+    footer {
+        height: 100px;
+        background-color: #447792;
+        color: white;
+    }
+
+    #footerAddress {
+        display: none;
+    }
+
+    footer a {
+        color: white;
+        cursor: pointer;
+    }
+
+    .socialMedia {
+        width: 50%;
+        height: 100px;
+        float: right;
+    }
+
+    .footerContact {
+        width: 50%;
+        height: 100px;
+        float: left;
+    }
+
+
+    .footerContact a,
+    .footerContact h3 {
+        margin-left: 15px;
+        float: left;
+    }
+
+    .socialMedia h3,
+    .socialMedia a {
+        float: right;
+        margin-right: 15px;
+    }
+
+    .socialMedia h3,
+    .footerContact h3 {
+        width: 100%;
+    }
+
+    .footerContact h3 {
+        text-align: left;
+    }
+
+    .socialMedia h3 {
+        text-align: right;
+    }
+
+    .socialMedia a,
+    .footerContact a {
+        font-size: 20px;
+    }
+
+    .socialMedia a {}
+
+
+    #footerMail,
+    #footerTel {
+        display: none;
+    }
+
+    footer iframe {
+        display: none;
+    }
+
+    /* TICKETS PAGE */
+
+    #ticketsTable {
+        width: 100%;
+    }
+
+    #ticketsTable th {
+        text-align: left;
+    }
+
+    #ticketsTable tr {
+        line-height: 2;
+    }
+
+    .buyTickets {
+        padding: 10px 0;
+        height: 60px;
+    }
+
+    #buyButton {
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+
+    }
+
+    iframe {
         width: 100%;
         height: 300px
     }
-    
-    #ticketsTable{
+
+    #ticketsTable {
         border-collapse: collapse;
-    } 
-    
-    #ticketsTable td{
+    }
+
+    #ticketsTable td {
         border-collapse: collapse;
         width: 39%
     }
-    
-    #ticketsSelect{
+
+    #ticketsSelect {
         width: 20%;
         text-align: center;
     }
-    
-    .ticketsImg img{
-        width:100%;
-        height:auto;
+
+    .ticketsImg img {
+        width: 100%;
+        height: auto;
     }
-    
-    .ticketsForm input[type=text], input[type=tel], input[type=email]{
-    padding: 10px;
-    margin: 8px 0;
-    margin-left: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-radius: 4px;
-    outline: none;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%
+
+    .ticketsForm input[type=text],
+    input[type=tel],
+    input[type=email] {
+        padding: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+        outline: none;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94%
     }
-    
-    .ticketsForm select{
+
+    .ticketsForm select {
         border: 1px solid grey;
         border-radius: 2px
-
     }
-    .ticketsForm{
+
+    .ticketsForm {
         padding-bottom: 130px;
 
     }
-    
-    .orderOverlay .fa-times{
+
+    .orderOverlay .fa-times {
         color: black;
         margin-right: 10px;
         cursor: pointer;
     }
-    
-    #wayOfPayment{
+
+    #wayOfPayment {
         width: 50%;
         float: left;
         margin-left: 10px;
-    } 
-    
-    #festivalConditions a{
+    }
+
+    #festivalConditions a {
         color: #447792;
     }
-    
-    #festivalConditions p{
+
+    #festivalConditions p {
         float: left;
     }
-    
-      #purchaseButton{
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    box-shadow: 2px 2px 2px grey;
-    
+
+    #purchaseButton {
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px grey;
+
     }
-    
-    #purchaseButton:disabled{
+
+    #purchaseButton:disabled {
         color: white;
         background-color: darkgray;
         margin-right: 10px;
     }
-    
-    .orderOverlay{
+
+    .orderOverlay {
         position: fixed;
         top: 0;
         background-color: white;
@@ -431,19 +462,21 @@ body{
         border-radius: 6px;
         margin-top: 130px;
         box-shadow: 0px 0px 100px grey;
-        
+
     }
-    
-    .orderOverlay h3, .orderOverlay input{
+
+    .orderOverlay h3,
+    .orderOverlay input {
         margin-left: 10px;
     }
+
     /* CONTACT PAGE */
-    
-    .contactHeader{
+
+    .contactHeader {
         text-align: center;
     }
-    
-    .contactForm input{
+
+    .contactForm input {
         width: 80%;
         padding: 10px;
         margin: 8px 0;
@@ -452,460 +485,496 @@ body{
         border-radius: 4px;
         outline: none;
         display: inline-block;
-         display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 10%;
         margin-right: 10%;
     }
-    
-    #contactMessage{
+
+    #contactMessage {
         height: 80px;
     }
-    
-    #contactBtn{
+
+    #contactBtn {
         background-color: #447792;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 8px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 15px;
-       margin: 1px 2px;
-       cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 2px;
+        cursor: pointer;
         box-shadow: 2px 2px 2px grey;
         float: right;
         margin-right: 10%;
-        
-        
+
+
     }
-    
-    
-    
+
+
+
     /* PROGRAM */
-    #programTimeline{
+    #programTimeline {
         overflow-x: scroll;
         width: auto;
         white-space: nowrap;
     }
-    #programTimeline a{
+
+    #programTimeline a {
         color: black;
         text-decoration: none;
-         display: inline-block;
-         padding: 2px 18px;
+        display: inline-block;
+        padding: 2px 18px;
         border-radius: 3px
-     }
-    
-    #programTimeline a:active{
+    }
+
+    #programTimeline a:active {
         background-color: #447792;
         color: white !important;
-    
+
     }
-    .program2019{ 
+
+    .program2019 {
         background-color: #447792;
         color: white !important;
     }
-    
-    .program h4{
+
+    .program h4 {
         background-color: #447792;
         padding: 2px 6px;
         color: white;
-        border-radius: 2px   
+        border-radius: 2px
     }
-    .fa-chevron-down{
+
+    .fa-chevron-down {
         float: right;
         margin-top: 3px;
     }
-    
-    #programSchedule table{
+
+    #programSchedule table {
         font-size: 10px;
         text-align: center;
         width: 100%;
         border-collapse: collapse;
 
     }
-    
+
     #programSchedule td {
-  padding-top:8px;
+        padding-top: 8px;
         width: 15%
-  
     }
     
+    #workshopDancingImg, #workshopDesignImg, #workshopTheatreImg, #workshopSportImg, #workshopFirstAidImg{
+    width:100%;
+    height: auto;
+    }
     /* ABOUT FESTIVAL */
-    
-    #aboutImage{
+
+    #aboutImage {
         width: 100%;
         height: auto;
     }
 
-    #aboutImage2{
+    #aboutImage2 {
         display: none
     }
-} 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 480px) { 
-    
+@media only screen and (min-width: 480px) {
+
     /* HOME PAGE */
-    .fa-bars, .fa-times, .slider{
-     display: block;
+    .fa-bars,
+    .fa-times,
+    .slider {
+        display: block;
     }
-    
-    nav{
+
+    nav {
         display: none;
     }
-    
-    .workshops{
+
+    .workshops {
         height: 200px;
     }
-     .workshops img{
+
+    .workshops img {
         height: 200px;
     }
-    
-    
-} 
+
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) {
-    
-    
-     nav{
-       display: none;
+
+
+    nav {
+        display: none;
     }
-    
-     .fa-bars, .fa-times, .slider{
-     display: block !important;
+
+    .fa-bars,
+    .fa-times,
+    .slider {
+        display: block !important;
     }
-    
-      .fa-times{
+
+    .fa-times {
         color: white;
         float: right;
         margin-right: 30px;
         font-size: 30px;
         display: block !important;
     }
-      .fa-bars{
-          float: right;
-          margin-right: 15px;
-          padding-top: 20px;
-          position: absolute;
-          right: 0;
-          display: block !important;
-          color: white;
-          font-size: 30px;
+
+    .fa-bars {
+        float: right;
+        margin-right: 15px;
+        padding-top: 20px;
+        position: absolute;
+        right: 0;
+        display: block !important;
+        color: white;
+        font-size: 30px;
     }
-    
-    
-    .slider ul{
+
+
+    .slider ul {
         color: white;
         list-style: none;
         padding-top: 20px;
         line-height: 3;
         margin-left: auto;
     }
-    
-   
-    .slider a{
+
+
+    .slider a {
         color: white;
         text-decoration: none;
-        font-size: 30px
+        font-size: 20px
     }
-    
-    .slider{
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #447792;
-      overflow-x: hidden;
-      transition: 0.7s;
-      padding-top: 20px;
+
+    .slider {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #447792;
+        overflow-x: hidden;
+        transition: 0.7s;
+        padding-top: 20px;
         z-index: 9999;
         white-space: nowrap;
     }
-    
-    .hamburgerBar{
+
+    .hamburgerBar {
         height: 50px;
     }
-    
- 
-    li{
+
+
+    li {
         list-style: none;
     }
-    
- 
-     #navLinks{
+
+
+    #navLinks {
         display: block;
 
-        
-    } 
-    
 
-    #sliderLinks{
+    }
+
+
+    #sliderLinks {
         display: block !important;
     }
-    
-    #homePageHeader h2, #countdown, .TicketBtn{
+
+    #homePageHeader h2,
+    #countdown,
+    .TicketBtn {
         text-align: center;
     }
-    
-    .readMoreBtn{
-       background-color: #447792;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 8px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 10px;
-       margin: 1px 2px;
-       cursor: pointer;
+
+    .readMoreBtn {
+        background-color: #447792;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 1px 2px;
+        cursor: pointer;
         box-shadow: 2px 2px 2px grey;
         float: right;
         margin-right: 15px;
-        
+
     }
-    
-    .workshops{
+
+    .workshops {
         width: 23.3%;
         float: left;
         margin: 8px;
     }
-    
-      #thirdWorkshop{
+
+    #thirdWorkshop {
         display: block;
     }
-    
-    .workshopsHeader h3{
+
+    .workshopsHeader h3 {
         margin-left: 8px;
     }
-    
-    #workshopBreak{
+
+    #workshopBreak {
         display: none;
     }
-    
-    .workshopGrid{
+
+    .workshopGrid {
         display: grid;
     }
-    
-    .workshops{
-        width:96%;
+
+    .workshops {
+        width: 96%;
     }
-    
-    #dancingWorkshop{
+
+    #dancingWorkshop {
         grid-row: 1;
         grid-column: 1;
     }
-    #artWorkshop{
+
+    #artWorkshop {
         grid-row: 1;
         grid-column: 2;
     }
-    #thirdWorkshop{
-       display: none
+
+    #thirdWorkshop {
+        display: none
     }
-    
-    .seeMore{
+
+    .seeMore {
         text-align: right;
         padding-top: 120px;
         padding-right: 8px;
-    } 
-    .seeMore a{
+    }
+
+    .seeMore a {
         color: black;
         text-decoration: none;
         cursor: pointer;
     }
-    
-    .reviews{
+
+    .reviews {
         float: left;
     }
-    
-    .ytVideo{
+
+    .ytVideo {
         float: left;
         width: 50%;
     }
-    
-    .ytVideo iframe{
+
+    .ytVideo iframe {
         margin-left: 15px;
         width: 92%;
         border: 0;
         height: 280px
     }
-    header img{
+
+    header img {
         width: 100%;
         height: 20%;
     }
-    
-    main{
+
+    main {
         width: 100%;
         float: left;
     }
-    
-   
-    
-    
-    footer{
+
+
+
+
+    footer {
         width: 100%;
         float: left;
         background-color: #447792;
         color: white;
     }
-   
-    footer a{
+
+    footer a {
         color: white;
         cursor: pointer;
     }
-    
-    .footerContact{
+
+    .footerContact {
         float: left;
     }
-    
-    footer h3, footer p{
+
+    footer h3,
+    footer p {
         margin-left: 8px;
     }
-    
-    .socialMedia h3, .socialMedia p, .socialMedia a{
+
+    .socialMedia h3,
+    .socialMedia p,
+    .socialMedia a {
         margin-right: 8px;
     }
-    
-    .socialMedia , .socialMedia a{
+
+    .socialMedia,
+    .socialMedia a {
         float: right;
     }
-    
-    .socialMedia .fab{
+
+    .socialMedia .fab {
         font-size: 30px;
     }
-    
-    .footerContact h3, .footerContact p{
+
+    .footerContact h3,
+    .footerContact p {
         width: 50%;
     }
-    
-    .footerContact .far, .footerContact .fas{
+
+    .footerContact .far,
+    .footerContact .fas {
         display: none;
     }
-    .workshopImage img{
+
+    .workshopImage img {
         height: 220px
     }
-    
-    #homePageHeader{
+
+    #homePageHeader {
         font-size: 25px;
     }
-    
-    #countdown{
+
+    #countdown {
         font-size: 25px;
     }
-    
-    #footerAddress{
+
+    #footerAddress {
         display: block;
         width: 30%
     }
-    
-    .reviewsHeader h3, .reviews p{
+
+    .reviewsHeader h3,
+    .reviews p {
         margin-left: 7px;
     }
-    
-    .reviews, .reviewsHeader{
+
+    .reviews,
+    .reviewsHeader {
         width: 50%
     }
-    
-     footer iframe{
+
+    footer iframe {
         display: none;
     }
-    
-    
+
+
     /* PROGRAM */
-    
-    #programTimeline{
+
+    #programTimeline {
         overflow-x: scroll;
         width: auto;
         white-space: nowrap;
     }
-    #programTimeline a{
+
+    #programTimeline a {
         color: black;
         text-decoration: none;
-         display: inline-block;
-         padding: 2px 30px;
+        display: inline-block;
+        padding: 2px 30px;
         border-radius: 3px
-     }
-    
-    .program2019{ 
+    }
+
+    .program2019 {
         background-color: #447792;
         color: white !important;
     }
-    
-    .programPageWrapper{
+
+    .programPageWrapper {
         margin: 0 4%
     }
-    
-    #programSchedule table{
+
+    #programSchedule table {
         width: 100%;
         text-align: center;
         line-height: 2;
         border-collapse: collapse;
     }
-    
+
     .program h4 {
-    background-color: #447792;
-    padding: 2px 6px;
-    color: white;
-    border-radius: 2px;
+        background-color: #447792;
+        padding: 2px 6px;
+        color: white;
+        border-radius: 2px;
         cursor: pointer;
     }
-    
-    .fa-chevron-down{
+
+    .fa-chevron-down {
         float: right;
         margin-top: 3px;
-        
+
     }
-    
-    .program img{
+
+    .program img {
         width: 30%;
         float: left;
         margin: 0 10%;
-        
-    } 
-    
-    .program p
-    {
+
+    }
+
+    .program p {
         width: 50%;
         float: left;
-        
+
     }
-    
-    #dancingWrapper, #designWrapper, #theatreWrapper, #sportWrapper, #firstAidWrapper{
+
+    #dancingWrapper,
+    #designWrapper,
+    #theatreWrapper,
+    #sportWrapper,
+    #firstAidWrapper {
         height: 300px;
     }
-    
-    #firstAidWrapper{
+
+    #firstAidWrapper {
         padding-bottom: 20px;
     }
-    
+
     /* ABOUT FESTIVAL */
-    
-    #aboutFestivalTextOne, #aboutFestivalTextTwo, #aboutFestivalHeader{
+
+    #aboutFestivalTextOne,
+    #aboutFestivalTextTwo,
+    #aboutFestivalHeader {
         margin: 0 2%;
         padding: 10px 0;
     }
-    
-    #aboutImage{
+
+    #aboutImage {
         display: none;
     }
-    
-    #aboutImage2{
+
+    #aboutImage2 {
         display: none
     }
+
     /* CONTACT */
-    
-    .contactHeader{
+
+    .contactHeader {
         width: 50%;
         float: left;
     }
-    
-    .contactForm input{
+
+    .contactForm input {
         width: 100%;
         padding: 10px;
         margin: 8px 0;
@@ -919,670 +988,731 @@ body{
         justify-content: center;
         margin-left: 3%;
     }
-    
-    .contactForm form{
+
+    .contactForm form {
         width: 50%;
         margin: 0 2%;
         float: left;
         padding-bottom: 20px
     }
-    
-    .contactHeader h3{
+
+    .contactHeader h3 {
         width: 100%;
         text-align: left;
         margin-left: 7%
     }
-    
-     #contactBtn{
+
+    #contactBtn {
         background-color: #447792;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 8px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 15px;
-       margin: 1px 2px;
-       cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 2px;
+        cursor: pointer;
         box-shadow: 2px 2px 2px grey;
         float: right;
-        
-        
+
+
     }
-    
-    iframe{
+
+    iframe {
         float: left;
         width: 42%;
         margin: 0 2%;
         height: 280px;
     }
-    
-    #contactMessage{
+
+    #contactMessage {
         height: 200px;
     }
-    
+
     /* TICKETS */
-    
-       .orderOverlay {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 60%;
-    margin-top: 200px;
-    border-radius: 6px;
-    margin: 0 20%;
-    margin-top: 130px;
-    height: 330px;
-    box-shadow: 0px 0px 100px grey;
-}
-    
+
+    .orderOverlay {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 60%;
+        margin-top: 200px;
+        border-radius: 6px;
+        margin: 0 20%;
+        margin-top: 130px;
+        height: 330px;
+        box-shadow: 0px 0px 100px grey;
+    }
+
     #purchaseButton {
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    box-shadow: 2px 2px 2px grey;
-}
-     #purchaseButton:disabled{
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    #purchaseButton:disabled {
         color: white;
         background-color: darkgray;
         margin-right: 10px;
     }
-    
-    .ticketsForm input[type=text], .ticketsForm input[type=tel], .ticketsForm input[type=email] {
-    padding: 10px;
-    margin: 8px 0;
-    margin-left: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-radius: 4px;
-    outline: none;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%;
-}
-    .ticketsForm select, .orderOverlay h3, #festivalConditions p{
+
+    .ticketsForm input[type=text],
+    .ticketsForm input[type=tel],
+    .ticketsForm input[type=email] {
+        padding: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+        outline: none;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94%;
+    }
+
+    .ticketsForm select,
+    .orderOverlay h3,
+    #festivalConditions p {
         margin-left: 8px;
     }
-    
+
     .orderOverlay .fa-times {
-    color: black;
-    margin-right: 10px;
-    cursor: pointer;
-}
-    
-    .ticketsImg img{
-        width:96%;
-        height:auto;
+        color: black;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .ticketsImg img {
+        width: 96%;
+        height: auto;
         margin: 0 2%;
     }
-    
-    #ticketsHeader{
+
+    #ticketsHeader {
         width: 96%;
         margin: 0 2%;
     }
-    
-    #ticketsSelect{
+
+    #ticketsSelect {
         width: 10%;
     }
-    #ticketsTable{
+
+    #ticketsTable {
         width: 96%;
         border-collapse: collapse;
         line-height: 2;
     }
-    .getTickets{
+
+    .getTickets {
         margin: 0 2%;
     }
-    
+
     #buyButton {
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px grey;
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+    }
+
 }
-   
-} 
-    
-    
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 750px) {
-    #thirdWorkshop{
-         display: block;
-         grid-row: 1;
-         grid-column: 3;
-        }
-    
-    .workshopImage img{
+    #thirdWorkshop {
+        display: block;
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .workshopImage img {
         height: 180px;
     }
-    
-    #workshopTextArt{
+
+    #workshopTextArt {
         padding-bottom: 20px;
     }
-    
-    .ticketsImg img{
+
+    .ticketsImg img {
         width: 96%;
         margin: 0 3%;
     }
-    
-    .getTickets{
+
+    .getTickets {
         width: 40%;
-        margin-left:2%;
+        margin-left: 2%;
         float: left;
     }
-    #ticketsHeader{
+
+    #ticketsHeader {
         width: 50%;
     }
-    #ticketsTable{
+
+    #ticketsTable {
         border-collapse: collapse;
     }
-    
-    #ticketsSelect{
+
+    #ticketsSelect {
         width: 10%;
         text-align: center;
     }
-    #ticketsTr{
+
+    #ticketsTr {
         text-align: left;
     }
+
     #buyButton {
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px grey;
-}
-    
-    nav{
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    nav {
         z-index: 999;
     }
 
 
-    
-    .ticketsImg{
+
+    .ticketsImg {
         float: right;
         width: 50%;
         margin-right: 2%;
     }
-    #ticketsHeader{
+
+    #ticketsHeader {
         margin-left: 2%;
     }
-    #ticketsTable{
+
+    #ticketsTable {
         width: 100%;
     }
-    
+
     .orderOverlay {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 60%;
-    margin-top: 200px;
-    border-radius: 6px;
-    margin: 0 20%;
-    margin-top: 130px;
-    height: 330px;
-    box-shadow: 0px 0px 100px grey;
-}
-    
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 60%;
+        margin-top: 200px;
+        border-radius: 6px;
+        margin: 0 20%;
+        margin-top: 130px;
+        height: 330px;
+        box-shadow: 0px 0px 100px grey;
+    }
+
     #purchaseButton {
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    box-shadow: 2px 2px 2px grey;
-}
-     #purchaseButton:disabled{
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    #purchaseButton:disabled {
         color: white;
         background-color: darkgray;
         margin-right: 10px;
     }
-    
-    .ticketsForm input[type=text], .ticketsForm input[type=tel], .ticketsForm input[type=email] {
-    padding: 10px;
-    margin: 8px 0;
-    margin-left: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-radius: 4px;
-    outline: none;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%;
-}
-    .ticketsForm select, .orderOverlay h3, #festivalConditions p{
+
+    .ticketsForm input[type=text],
+    .ticketsForm input[type=tel],
+    .ticketsForm input[type=email] {
+        padding: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+        outline: none;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94%;
+    }
+
+    .ticketsForm select,
+    .orderOverlay h3,
+    #festivalConditions p {
         margin-left: 8px;
     }
 
 }
 
 @media only screen and (min-width: 890px) {
-    #thirdWorkshop{
-         display: block;
-         grid-row: 1;
-         grid-column: 3;
-        }
-    
-    .workshopImage img{
+    #thirdWorkshop {
+        display: block;
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .workshopImage img {
         height: 200px;
     }
-    
-    #workshopTextArt{
+
+    #workshopTextArt {
         padding-bottom: 0px;
     }
-    
-    .ytVideo iframe{
+
+    .ytVideo iframe {
         margin-left: 15px;
         width: 92%;
         border: 0;
         padding-bottom: 10px;
         height: 280px
     }
-    
-    #aboutFestivalTextTwo{
+
+    #aboutFestivalTextTwo {
         padding-bottom: 200px;
     }
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    
-      
-    main{
+
+
+    main {
         width: 100%;
         float: left;
     }
-    
- 
-    header img{
-        
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
+
+
+    header img {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         height: auto;
         width: 95%;
-        
-    }
-    
-  
 
-      nav{
+    }
+
+
+
+    nav {
         height: 50px;
         background-color: #447792;
         display: block;
         width: 100%;
         position: fixed;
     }
-    
- 
-    li{
+
+
+    li {
         list-style: none;
     }
-    
-  .fa-bars, .slider{
-     display: none !important;
-    }
-    
-     #navLinks a{
-        display: block;
-        color: white;
-         float: left;
-         text-decoration: none;
-         padding: 0 10px;
-         text-align: center;
-         font-size: 18px;
 
-        
-    } 
-    
-    #navLinks a:hover{
-        text-decoration: underline;
-    }
-    
-    #sliderLinks{
+    .fa-bars,
+    .slider {
         display: none !important;
     }
-    
-    #homePageHeader h2, #countdown, .TicketBtn{
+
+    #navLinks a {
+        display: block;
+        color: white;
+        float: left;
+        text-decoration: none;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 18px;
+
+
+    }
+
+    #navLinks a:hover {
+        text-decoration: underline;
+    }
+
+    #sliderLinks {
+        display: none !important;
+    }
+
+    #homePageHeader h2,
+    #countdown,
+    .TicketBtn {
         text-align: center;
     }
-    
-    .readMoreBtn{
-       background-color: #447792;
-       border: none;
-       border-radius: 6px;;
-       color: white;
-       padding: 8px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 10px;
-       margin: 1px 2px;
-       cursor: pointer;
+
+    .readMoreBtn {
+        background-color: #447792;
+        border: none;
+        border-radius: 6px;
+        ;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 1px 2px;
+        cursor: pointer;
         box-shadow: 2px 2px 2px grey;
         float: right;
         margin-right: 15px;
-        
+
     }
-    
-    .workshops{
+
+    .workshops {
         width: 23.3%;
         float: left;
         margin: 8px;
     }
-    
-      #thirdWorkshop{
+
+    #thirdWorkshop {
         display: block;
     }
-    
-    .workshopsHeader h3{
+
+    .workshopsHeader h3 {
         margin-left: 8px;
     }
-    
-    #workshopBreak{
+
+    #workshopBreak {
         display: none;
     }
-    
-    .workshopGrid{
+
+    .workshopGrid {
         display: grid;
         grid-gap: 0px;
     }
-    
-    .workshops{
-        width:95%;
+
+    .workshops {
+        width: 95%;
     }
-    
-    #dancingWorkshop{
+
+    #dancingWorkshop {
         grid-row: 1;
         grid-column: 1;
     }
-    #artWorkshop{
+
+    #artWorkshop {
         grid-row: 1;
         grid-column: 2;
     }
-    #thirdWorkshop{
+
+    #thirdWorkshop {
         grid-row: 1;
         grid-column: 3;
     }
-    
-    .seeMore{
+
+    .seeMore {
         text-align: right;
-    } 
-    .seeMore a{
+    }
+
+    .seeMore a {
         color: black;
         text-decoration: none;
         cursor: pointer;
     }
-    
-    #ytVideo{
-        
-    }
-    
-    .ytVideo iframe{
+
+    #ytVideo {}
+
+    .ytVideo iframe {
         margin-left: 15px;
         width: 96%;
         border: 0;
         height: 300px
     }
-    
 
-    
-    footer{
+
+
+    footer {
         width: 100%;
         float: left;
         background-color: #447792;
         color: white;
     }
-   
-    footer a{
+
+    footer a {
         color: white;
         cursor: pointer;
     }
-    
-    .footerContact{
+
+    .footerContact {
         float: left;
     }
-    
-    footer h3, footer p{
+
+    footer h3,
+    footer p {
         margin-left: 8px;
     }
-    
-    .socialMedia h3, .socialMedia p, .socialMedia a{
+
+    .socialMedia h3,
+    .socialMedia p,
+    .socialMedia a {
         margin-right: 8px;
     }
-    
-    .socialMedia , .socialMedia a{
+
+    .socialMedia,
+    .socialMedia a {
         float: right;
     }
-    
-    .socialMedia .fab{
+
+    .socialMedia .fab {
         font-size: 30px;
+        padding-right: 10px;
     }
-    
-    .footerContact h3, .footerContact p{
+
+    .socialMedia a {
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+
+    .footerContact h3,
+    .footerContact p {
         width: 50%;
     }
-    
-    .footerContact .far, .footerContact .fas{
+
+    .footerContact .far,
+    .footerContact .fas {
         display: none;
     }
-    .workshopImage img{
+
+    .workshopImage img {
         height: 220px
     }
-    
-    #homePageHeader{
+
+    #homePageHeader {
         font-size: 25px;
     }
-    
-    #countdown{
+
+    #countdown {
         font-size: 25px;
     }
-    
-    #footerAddress{
+
+    #footerAddress {
         display: block;
         width: 30%
     }
-    
-    .reviewsHeader h3, .reviews p{
+
+    .reviewsHeader h3,
+    .reviews p {
         margin-left: 7px;
     }
-    
-    .reviews, .reviewsHeader{
+
+    .reviews,
+    .reviewsHeader {
         width: 50%
     }
-    
-     footer iframe{
+
+    footer iframe {
         display: block;
         padding-top: 30px;
     }
-    
-    
-    
-#programTimeline::-webkit-scrollbar {
-       height: 5px;
-}
 
-/* Track */
-#programTimeline::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
- 
-/* Handle */
-#programTimeline::-webkit-scrollbar-thumb {
-  background: #888; 
-}
 
-/* Handle on hover */
-#programTimeline::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-    
-    #dancingWrapper, #designWrapper, #theatreWrapper, #sportWrapper, #firstAidWrapper{
+
+    #programTimeline::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    /* Track */
+    #programTimeline::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    #programTimeline::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    #programTimeline::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    #dancingWrapper,
+    #designWrapper,
+    #theatreWrapper,
+    #sportWrapper,
+    #firstAidWrapper {
         height: 200px;
     }
-    
-    #overlayX{
+
+    #overlayX {
         display: block;
     }
-    
+
 }
 
 
 @media only screen and (min-width: 1150px) {
-    
-    #navLinks{
+
+    #navLinks {
         padding-left: 2%;
     }
-  .workshopImage img{
+
+    .workshopImage img {
         height: 320px
     }
-    
-    .workshops{
-        width:97%;
+
+    .workshops {
+        width: 97%;
     }
-    
-    .workshopGrid{
+
+    .workshopGrid {
         height: 320px;
     }
-      #workshopTextArt{
+
+    #workshopTextArt {
         padding-bottom: 18px;
     }
-    
-    .reviews{
+
+    .reviews {
         line-height: 2;
     }
-    
-      .ytVideo iframe{
+
+    .ytVideo iframe {
         width: 96%;
         height: 380px
     }
-    #aboutFestivalTextTwo{
+
+    #aboutFestivalTextTwo {
         padding-bottom: 30px;
     }
-    
-    #aboutFestivalHeader, #aboutFestivalTextOne, #aboutFestivalTextTwo{
+
+    #aboutFestivalHeader,
+    #aboutFestivalTextOne,
+    #aboutFestivalTextTwo {
         width: 50%;
         padding-left: 8px;
         float: left;
     }
-    
-    #aboutImage2{
+
+    #aboutImage2 {
         display: block;
         width: 43%;
         padding: 20px 0;
     }
-    
-    #dancingWrapper, #designWrapper, #theatreWrapper, #sportWrapper, #firstAidWrapper{
+
+    #dancingWrapper,
+    #designWrapper,
+    #theatreWrapper,
+    #sportWrapper,
+    #firstAidWrapper {
         height: 300px;
     }
-    
-    
+
+
     .orderOverlay {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 30%;
-    margin-top: 200px;
-    border-radius: 6px;
-    margin: 0 35%;
-    margin-top: 130px;
-    height: 330px;
-    box-shadow: 0px 0px 100px grey;
-}
-    
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 30%;
+        margin-top: 200px;
+        border-radius: 6px;
+        margin: 0 35%;
+        margin-top: 130px;
+        height: 330px;
+        box-shadow: 0px 0px 100px grey;
+    }
+
     #purchaseButton {
-    position: relative;
-    float: right;
-    background-color: #74b1d0;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    box-shadow: 2px 2px 2px grey;
-}
-     #purchaseButton:disabled{
+        position: relative;
+        float: right;
+        background-color: #74b1d0;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    #purchaseButton:disabled {
         color: white;
         background-color: darkgray;
         margin-right: 10px;
     }
-    
-    .ticketsForm input[type=text], .ticketsForm input[type=tel], .ticketsForm input[type=email] {
-    padding: 10px;
-    margin: 8px 0;
-    margin-left: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-radius: 4px;
-    outline: none;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%;
-}
-    .ticketsForm select, .orderOverlay h3, #festivalConditions p{
+
+    .ticketsForm input[type=text],
+    .ticketsForm input[type=tel],
+    .ticketsForm input[type=email] {
+        padding: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+        outline: none;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94%;
+    }
+
+    .ticketsForm select,
+    .orderOverlay h3,
+    #festivalConditions p {
         margin-left: 8px;
     }
-    
+
     .orderOverlay .fa-times {
-    color: black;
-    margin-right: 10px;
-    cursor: pointer;
-}
-    
-    #ticketsHeader{
+        color: black;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #ticketsHeader {
         padding-top: 20px;
     }
-    
-    #ticketsTable, #ticketsHeader{
+
+    #ticketsTable,
+    #ticketsHeader {
         margin-left: 3%;
     }
-    
- }
+
+}

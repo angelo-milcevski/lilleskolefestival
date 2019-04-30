@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,159 +9,160 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    
-    
+
+
 
 </head>
 
 <body>
-       <!-- <script src="//app.storyblok.com/f/storyblok-latest.js?t=8wpboz3QWlaT4F8MLPbTwwtt" type="text/javascript"> </script> --> 
+    <!-- <script src="//app.storyblok.com/f/storyblok-latest.js?t=8wpboz3QWlaT4F8MLPbTwwtt" type="text/javascript"> </script> -->
 
     <script src="assets/js/script.js"></script>
-    
-   <div class="slider">
-       <i class="fas fa-times" onclick="closeSlider()"></i>
+
+    <div class="slider">
+        <i class="fas fa-times" onclick="closeSlider()"></i>
 
         <ul id="sliderLinks">
 
-       </ul>
+        </ul>
     </div>
-    
+
     <nav>
-     <ul id="navLinks">
+        <ul id="navLinks">
 
-       </ul>
-    
+        </ul>
+
     </nav>
-    
-        <i class="fas fa-bars" onclick="sideMenu()"></i>
 
-     <header>
-    <img  alt="Costa del aal" id="headerImage">
-    </header>  
-    
+    <i class="fas fa-bars" onclick="sideMenu()"></i>
+
+    <header>
+        <img alt="Costa del aal" id="headerImage">
+    </header>
+
     <main>
         <div class="programPageWrapper">
-        <h3>Program</h3>
-        <div id="programTimeline">
-        </div>
+            <h3>Program</h3>
+            <div id="programTimeline">
+            </div>
             <br>
-        <div id="programSchedule">
-          <table>
-            <tr style="border-bottom: 1px solid grey;">
-              <th>Time</th>
-              <th>Jimi Hendrix scenen</th>
-              <th>Janis Joplin scenen</th>
-              <th>Woodstock teatersal</th>
-              
-              </tr>
-              
-              <tr>
-              <td>13:00 - 13:10</td>
-              <td>Åbning af festivalen</td>
-              <td></td>
-              <td></td>
-              
-              </tr>
-              
-              <tr>
-              <td>15:50 - 16:40</td>
-              <td></td>
-              <td>Roskilde Lilleskole</td>
-              <td></td>
-              
-              </tr> 
-              
-              <tr>
-              <td>19:00 - 20:00</td>
-              <td></td>
-              <td></td>
-              <td>Ryparken Lille Skole</td>
-              
-              </tr> 
-          
-            
-            
-            </table>  
-        </div>
-        <h3 id="workshops">Workshops</h3>
-        
-      <div class="program workshopDance" id="workshopDance">
-        <h4 onclick="displayDancing()">Dancing <i class="fas fa-chevron-down"></i></h4>
-          <div id="dancingWrapper" style="display: none">
-          <p id="pDancing"></p>
-          
-        <img src="assets/img/dancing.jpg" width="100%" height="auto" >
-          </div>
-        </div>
-        
-         <div class="program workshopDesign" id="workshopDesign">
-        <h4 onclick="displayDesign()">Design <i class="fas fa-chevron-down"></i></h4>
-        <div id="designWrapper" style="display: none">
-            <p id="pDesign"></p> 
-             
-        <img src="assets/img/art.jpg" width="100%" height="auto">
-             </div>
-        </div>
-        
-        <div class="program workshopTheatre" id="workshopTheatre">
-        <h4 onclick="displayTheatre()">Theatre <i class="fas fa-chevron-down"></i></h4>
-            <div id="theatreWrapper" style="display: none">
-            <p id="pTheatre"></p>
-        
-        <img src="assets/img/act.jpg" width="100%" height="auto">
+            <div id="programSchedule">
+                <table>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <th>Time</th>
+                        <th>Jimi Hendrix scenen</th>
+                        <th>Janis Joplin scenen</th>
+                        <th>Woodstock teatersal</th>
+
+                    </tr>
+
+                    <tr>
+                        <td>13:00 - 13:10</td>
+                        <td>Åbning af festivalen</td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>15:50 - 16:40</td>
+                        <td></td>
+                        <td>Roskilde Lilleskole</td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>19:00 - 20:00</td>
+                        <td></td>
+                        <td></td>
+                        <td>Ryparken Lille Skole</td>
+
+                    </tr>
+
+
+
+                </table>
+            </div>
+            <h3 id="workshops">Workshops</h3>
+
+            <div class="program workshopDance" id="workshopDance">
+                <h4 onclick="displayDancing()">Dancing <i class="fas fa-chevron-down"></i></h4>
+                <div id="dancingWrapper" style="display: none">
+                    <p id="pDancing"></p>
+
+                    <img id="workshopDancingImg">
+                </div>
+            </div>
+
+            <div class="program workshopDesign" id="workshopDesign">
+                <h4 onclick="displayDesign()">Design <i class="fas fa-chevron-down"></i></h4>
+                <div id="designWrapper" style="display: none">
+                    <p id="pDesign"></p>
+
+                    <img id="workshopDesignImg">
+                </div>
+            </div>
+
+            <div class="program workshopTheatre" id="workshopTheatre">
+                <h4 onclick="displayTheatre()">Theatre <i class="fas fa-chevron-down"></i></h4>
+                <div id="theatreWrapper" style="display: none">
+                    <p id="pTheatre"></p>
+
+                    <img id="workshopTheatreImg">
+                </div>
+            </div>
+
+            <div class="program workshopSport">
+                <h4 onclick="displaySport()">Sport <i class="fas fa-chevron-down"></i></h4>
+                <div id="sportWrapper" style="display: none">
+                    <p id="pSport"></p>
+                    <img id="workshopSportImg">
+                </div>
+            </div>
+
+            <div class="program workshopFirstAid">
+                <h4 onclick="displayFirstAid()">First Aid <i class="fas fa-chevron-down"></i></h4>
+                <div id="firstAidWrapper" style="display: none">
+                    <p id="pFirstAid"></p>
+                    <img id="workshopFirstAidImg">
+                </div>
             </div>
         </div>
-        
-        <div class="program workshopSport" >
-        <h4 onclick="displaySport()">Sport <i class="fas fa-chevron-down"></i></h4>
-        <div id="sportWrapper" style="display: none">
-            <p id="pSport"></p>
-         <img src="assets/img/sport.jpg" width="100%" height="auto">
-            </div>
-        </div>
-        
-        <div class="program workshopFirstAid">
-        <h4 onclick="displayFirstAid()">First Aid <i class="fas fa-chevron-down"></i></h4>
-        <div id="firstAidWrapper" style="display: none">
-            <p id="pFirstAid"></p>
-        <img src="assets/img/firstAid.jpg" width="100%" height="auto">
-            </div>
-        </div>
-    </div>    
     </main>
 
-  
+
     <footer>
-    
+
         <div class="footerContact">
             <h3>Contact us</h3>
-            
-            <p id="footerAddress"></p>
-             <a id="footerEmail"><i class="far fa-envelope"></i></a>
-             <p id="footerMail"> </p>
-             <p id="footerTel"> </p>
-             <a id="footerPhone"><i class="fas fa-phone-square"></i></a>
-             <a id="footerMap" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
 
-                       
-        </div>   
-        
-        <div class="socialMedia">
-            <h3>Follow us</h3>
-            
-            <a id="footerFb" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
+            <p id="footerAddress"></p>
+            <a id="footerEmail"><i class="far fa-envelope"></i></a>
+            <p id="footerMail"> </p>
+            <p id="footerTel"> </p>
+            <a id="footerPhone"><i class="fas fa-phone-square"></i></a>
+            <a id="footerMap" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
 
 
         </div>
-        
-         
-      
-        
+
+        <div class="socialMedia">
+            <h3>Follow us</h3>
+
+            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
+            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a id="footerFb" target="_blank"><i class="fab fa-facebook"></i></a>
+
+
+        </div>
+
+
+
+
     </footer>
-    
-   
+
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,150 +9,151 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    
-    
-<style>
-    *{
-        scroll-behavior: smooth;
-    }
+
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
 <body>
-   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-       <!-- <script src="//app.storyblok.com/f/storyblok-latest.js?t=8wpboz3QWlaT4F8MLPbTwwtt" type="text/javascript"> </script> --> 
+
+    <!-- <script src="//app.storyblok.com/f/storyblok-latest.js?t=8wpboz3QWlaT4F8MLPbTwwtt" type="text/javascript"> </script> -->
 
     <script src="assets/js/script.js"></script>
-    
-   <div class="slider">
-       <i class="fas fa-times" onclick="closeSlider()"></i>
+
+    <div class="slider">
+        <i class="fas fa-times" onclick="closeSlider()"></i>
 
         <ul id="sliderLinks">
 
-       </ul>
+        </ul>
     </div>
-    
+
     <nav>
-     <ul id="navLinks">
+        <ul id="navLinks">
 
-       </ul>
-    
+        </ul>
+
     </nav>
-    
-        <i class="fas fa-bars" onclick="sideMenu()"></i>
 
-     <header>
-    <img  alt="Costa del aal" id="headerImage">
-    </header>  
-    
+    <i class="fas fa-bars" onclick="sideMenu()"></i>
+
+    <header>
+        <img alt="Costa del aal" id="headerImage">
+    </header>
+
     <main>
-        
+
         <h3 id="ticketsHeader">Tickets</h3>
-       
+
         <div class="getTickets">
-        
+
             <table id="ticketsTable">
                 <tr id="ticketsTr">
-            <th></th>
-            <th>Quantity</th>
-            <th>Price</th>
-            </tr>
-                
+                    <th></th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+
                 <tr style="border-bottom: 1px solid grey;">
                     <td>3 Day ticket</td>
-                     <td>
-                    
-                   <i class="fas fa-minus" onclick="decreaseValue(); priceUpdate()"></i> 
-                         
-                    <input type="number" id="ticketsSelect" onchange="priceUpdate()" value="1">
-                         
-                    <i class="fas fa-plus" onclick="increaseValue(); priceUpdate()"></i>
-                     
+                    <td>
+
+                        <i class="fas fa-minus" onclick="decreaseValue(); priceUpdate()"></i>
+
+                        <input type="number" id="ticketsSelect" onchange="priceUpdate()" value="1">
+
+                        <i class="fas fa-plus" onclick="increaseValue(); priceUpdate()"></i>
+
                     </td>
-                    
+
                     <td id="ticketPrice"></td>
-                   
+
                 </tr>
-            
+
                 <tr>
-                
-                <td><b>Total:</b></td>
-                <td></td>
-                <td id="totalPrice"></td>
+
+                    <td><b>Total:</b></td>
+                    <td></td>
+                    <td id="totalPrice"></td>
                 </tr>
             </table>
-        
-            <div class="buyTickets">
-            <button type="button" id="buyButton"  onclick="ticketsOverlay()">Buy</button>
-                </div>
-        
-        </div>
-        
-        
-        
-        <div class="orderOverlay" style="display: none">
-        <h3>Order Details <i class="fas fa-times" id="overlayX" onclick="closeOverlay()"></i></h3>
-        <div class="ticketsForm">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone" required>
-            <select id="wayOfPayment">
-            <option value="placeholder" disabled selected>Way of payment</option>
-            <option value="visa">Visa</option>
-            <option value="master">MasterCard</option>
-            <option value="mobilePay">Mobile Pay</option>
-            </select>
-           
-            <div id="festivalConditions">
-                <p>
-                    <input type="checkbox" id="checkbox" onclick="checkedBox()">  I agree with      
-                <a href="#conditions">Festival conditions</a> </p>
-               
-            
-            </div>
-        <button type="button" id="purchaseButton" disabled onclick="closeOverlay()">Purchase</button>
 
-       </div>
-            
+            <div class="buyTickets">
+                <button type="button" id="buyButton" onclick="ticketsOverlay()">Buy</button>
             </div>
-        
-            
+
+        </div>
+
+
+
+        <div class="orderOverlay" style="display: none">
+            <h3>Order Details <i class="fas fa-times" id="overlayX" onclick="closeOverlay()"></i></h3>
+            <div class="ticketsForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <select id="wayOfPayment">
+                    <option value="placeholder" disabled selected>Way of payment</option>
+                    <option value="visa">Visa</option>
+                    <option value="master">MasterCard</option>
+                    <option value="mobilePay">Mobile Pay</option>
+                </select>
+
+                <div id="festivalConditions">
+                    <p>
+                        <input type="checkbox" id="checkbox" onclick="checkedBox()"> I agree with
+                        <a href="#conditions">Festival conditions</a> </p>
+
+
+                </div>
+                <button type="button" id="purchaseButton" disabled onclick="closeOverlay()">Purchase</button>
+
+            </div>
+
+        </div>
+
+
         <div class="ticketsImg">
-              <img id="ticketsImg">
-            </div>
-        
-        
+            <img id="ticketsImg">
+        </div>
+
+
     </main>
 
     <footer>
-    
+
         <div class="footerContact">
             <h3>Contact us</h3>
-            
-            <p id="footerAddress"></p>
-             <a id="footerEmail"><i class="far fa-envelope"></i></a>
-             <p id="footerMail"> </p>
-             <p id="footerTel"> </p>
-             <a id="footerPhone"><i class="fas fa-phone-square"></i></a>
-             <a id="footerMap" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
 
-                       
-        </div>   
-        
-        <div class="socialMedia">
-            <h3>Follow us</h3>
-            
-            <a id="footerFb" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
+            <p id="footerAddress"></p>
+            <a id="footerEmail"><i class="far fa-envelope"></i></a>
+            <p id="footerMail"> </p>
+            <p id="footerTel"> </p>
+            <a id="footerPhone"><i class="fas fa-phone-square"></i></a>
+            <a id="footerMap" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
 
 
         </div>
-        
-         
-        
+
+        <div class="socialMedia">
+            <h3>Follow us</h3>
+
+            <a id="footerYt" target="_blank"><i class="fab fa-youtube"></i> </a>
+            <a id="footerIg" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a id="footerFb" target="_blank"><i class="fab fa-facebook"></i></a>
+
+
+        </div>
+
+
+
     </footer>
-    
-   
+
+
 </body>
+
 </html>
